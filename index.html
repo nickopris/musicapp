@@ -3,10 +3,38 @@
 <head>
   <meta charset="UTF-8">
   <title>Fancy app title</title>
-  <script src="js/angular.min.js"></script>
 </head>
 <body>
-<h1>Rock on</h1>
+  <div ng-app="musicApp">
 
+    <div ng-controller="FirstCtrl">
+      <h2>First controller example, output strings:</h2>
+      <input type="text" ng-model="data.message">
+      <p>{{data.message}}</p>
+      <p>Kaixo model message: {{kaixo.message}}</p>
+      <p>Hola model message: {{hola.message}}</p>
+    </div>
+
+    <div ng-controller="SecondCtrl">
+      <h2>Second controller example, return reversed data.message  </h2>
+      <p>Reversed message here: {{reversedMessage(data.message)}}</p>
+    </div>
+
+    <div ng-controller="DiscographyCtrl">
+      <h2>Example of a loop:</h2>
+      <ul>
+        <li ng-repeat="song in songs">{{song.title}}, in album {{song.album}}</li>
+      </ul>
+    </div>
+
+    <div ng-controller="JsonCtrl">
+      <h2>Example of button retrieving json:</h2>
+      <input type="submit" ng-click="addPeople()" value="click to get people">
+      <input type="text" ng-model="message">
+      <li ng-repeat="people in jsonData"></li>
+    </div>
+  </div>
+  <script src="js/angular.min.js"></script>
+  <script src="js/main.js"></script>
 </body>
 </html>
