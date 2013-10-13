@@ -1,0 +1,6 @@
+id: comment.full
+uuid: 3f9b0ac2-bb29-4581-bb00-c6d2be1f658b
+label: 'Full comment'
+targetEntityType: comment
+status: '0'
+langcode: en

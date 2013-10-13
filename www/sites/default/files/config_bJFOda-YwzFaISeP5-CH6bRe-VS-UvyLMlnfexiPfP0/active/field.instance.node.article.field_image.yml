@@ -1,0 +1,24 @@
+id: node.article.field_image
+uuid: 8106932e-98f3-4994-b646-70b3fe4a2663
+status: '1'
+langcode: und
+field_uuid: 1f7b5b81-5d52-4d2e-8900-c47e41063b0a
+entity_type: node
+bundle: article
+label: Image
+description: 'Upload an image to go with this article.'
+required: '0'
+default_value: {  }
+default_value_function: ''
+settings:
+  file_directory: field/image
+  file_extensions: 'png gif jpg jpeg'
+  max_filesize: ''
+  max_resolution: ''
+  min_resolution: ''
+  alt_field: '1'
+  title_field: ''
+  alt_field_required: '0'
+  title_field_required: '0'
+  default_image: '0'
+field_type: image

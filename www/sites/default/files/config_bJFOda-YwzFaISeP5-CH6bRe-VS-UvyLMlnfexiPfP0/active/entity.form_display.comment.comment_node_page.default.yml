@@ -1,0 +1,12 @@
+id: comment.comment_node_page.default
+uuid: c7bf69c6-be98-4936-8e02-2fc0e0187332
+targetEntityType: comment
+bundle: comment_node_page
+mode: default
+content:
+  comment_body:
+    type: text_textarea
+    weight: '0'
+    settings:
+      rows: '5'
+      placeholder: ''

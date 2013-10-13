@@ -1,0 +1,27 @@
+id: comment.comment_node_article
+uuid: 807f1102-cbd4-428a-844b-7595bf54435c
+targetEntityType: comment
+bundle: comment_node_article
+types:
+  - 'schema:Comment'
+fieldMappings:
+  subject:
+    properties:
+      - 'schema:name'
+  created:
+    properties:
+      - 'schema:dateCreated'
+    datatype_callback:
+      callable: date_iso8601
+  changed:
+    properties:
+      - 'schema:dateModified'
+    datatype_callback:
+      callable: date_iso8601
+  comment_body:
+    properties:
+      - 'schema:text'
+  uid:
+    properties:
+      - 'schema:author'
+    mapping_type: rel

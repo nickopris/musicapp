@@ -1,0 +1,8 @@
+id: personal
+uuid: 111970f0-88fa-42de-b003-034815160f56
+label: 'Personal contact form'
+recipients: {  }
+reply: ''
+weight: '0'
+status: '1'
+langcode: en

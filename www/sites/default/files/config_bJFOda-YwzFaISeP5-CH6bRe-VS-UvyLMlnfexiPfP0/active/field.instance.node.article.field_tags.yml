@@ -1,0 +1,14 @@
+id: node.article.field_tags
+uuid: 4c605740-b960-476a-9b25-372ebd0cd561
+status: '1'
+langcode: und
+field_uuid: 749fe68e-1675-4be9-8144-6825044a6315
+entity_type: node
+bundle: article
+label: Tags
+description: 'Enter a comma-separated list of words to describe your content.'
+required: '0'
+default_value: {  }
+default_value_function: ''
+settings: {  }
+field_type: taxonomy_term_reference

@@ -1,0 +1,6 @@
+id: taxonomy_term.full
+uuid: 8c5cd7e8-1bf5-44f1-9f00-c0e32b6d5ca1
+label: 'Taxonomy term page'
+targetEntityType: taxonomy_term
+status: '0'
+langcode: en

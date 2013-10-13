@@ -1,0 +1,6 @@
+id: node.search_result
+uuid: afe287fe-c50d-4fbd-9f00-d5a663ce94ef
+label: 'Search result'
+targetEntityType: node
+status: '0'
+langcode: en

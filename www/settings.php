@@ -1,5 +1,0 @@
-/*
-settings.php
- */
-
-/* Database */

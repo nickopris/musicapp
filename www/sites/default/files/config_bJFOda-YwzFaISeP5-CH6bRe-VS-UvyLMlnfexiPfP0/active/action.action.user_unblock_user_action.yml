@@ -1,0 +1,8 @@
+id: user_unblock_user_action
+label: 'Unblock the selected user(s)'
+uuid: 4915ca1c-7276-4d2e-9556-863604b9be9f
+status: '1'
+langcode: en
+type: user
+plugin: user_unblock_user_action
+configuration: {  }
