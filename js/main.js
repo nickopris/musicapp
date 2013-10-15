@@ -27,16 +27,9 @@ function DiscographyCtrl($scope){
   ];
 }
 
-function JsonCtrl($scope, $http){
-  $scope.url = "http://www.3i.com/our-people/json";
-
-  $scope.addPeople = function(){
-    console.log("gets here: ");
-    $http.get($scope.url).then(function(response){
-            console.log("response: ",response);
-            queries = response.queries;
-            $scope.jsonData = queries.nodes.node;
-            $scope.message = queries.nodes.node.business;
-        });
-  };
+function JSONPctrl($scope, $http) {
+  var url = 'https://gdata.youtube.com/feeds/api/users/orbitalofficial/uploads?alt=json-in-script&callback=JSON_CALLBACK';
+  $http.jsonp(url).success(function(data) {
+      $scope.results = data.feed.entry;
+  });
 }

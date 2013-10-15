@@ -21,17 +21,16 @@
     </div>
 
     <div ng-controller="DiscographyCtrl">
-      <h2>Example of a loop:</h2>
+      <h2>Looping through a static object:</h2>
       <ul>
         <li ng-repeat="song in songs">{{song.title}}, in album {{song.album}}</li>
       </ul>
     </div>
 
-    <div ng-controller="JsonCtrl">
-      <h2>Example of button retrieving json:</h2>
-      <input type="submit" ng-click="addPeople()" value="click to get people">
-      <input type="text" ng-model="message">
-      <li ng-repeat="people in jsonData"></li>
+    <div ng-controller="JSONPctrl">
+      <h2>Example of results retrieved through jsonp:</h2>
+      <li ng-repeat="result in results"> {{result.title.$t}} </li>
+
     </div>
   </div>
   <script src="js/angular.min.js"></script>
