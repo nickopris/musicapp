@@ -29,8 +29,10 @@
 
     <div ng-controller="JSONPctrl">
       <h2>Example of results retrieved through jsonp:</h2>
-      <li ng-repeat="result in results"> {{result.title.$t}} </li>
-
+      <button ng-click="getSongs()">List Orbital songs</button>
+      <ul>
+        <li ng-repeat="result in results | filter:title.$t"> {{result.title.$t}} </li>
+      </ul>
     </div>
   </div>
   <script src="js/angular.min.js"></script>
